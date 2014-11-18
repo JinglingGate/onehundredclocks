@@ -1,0 +1,160 @@
+body {
+  font-family: "Helvetica neue" Helvetica sans-serif;
+  font-size: 30px;
+  font-weight: 100;
+}
+.clock1 {
+  .hours_24_text, .minutes_text, .seconds_text, .spacer {
+    float: left;
+    margin-right: 3px;
+  }
+}
+
+.clock2 {
+  .hours_12_text, .minutes_text, .seconds_text, .spacer, .am_pm {
+    float: left;
+    margin-right: 10px;
+  }
+  .am_pm {
+    margin-left: 10px;
+  }
+}
+
+.clock3, .clock4, .clock5{
+  border: 2px solid black;
+  width: 300px;
+  height: 300px;
+  border-radius: 300px;
+  position: relative;
+  .mark {
+    position: absolute;
+    width: 40px;
+    text-align: center;
+  }
+  .twelve, .zero_24 {
+    top: 0px;
+    left: 130px;
+  }
+  .three, .six_24 {
+    top: 130px;
+    right: 0px;
+  }
+  .six, .twelve_24 {
+    left: 130px;
+    bottom: 0px;
+  }
+  .nine, .eighteen_24 {
+    left: 0px;
+    bottom: 130px;
+  }
+  .hour_line, .smooth_hour_line, .smooth_24_hour_line{
+    height: 75px;
+    width: 0px;
+    border: 2px solid black;
+    left: 148px;
+    top: 75px;
+    transform-origin: 2px 75px;
+  }
+  .minute_line {
+    height: 125px;
+    width: 0px;
+    border: 2px solid black;
+    left: 148px;
+    top: 25px;
+    transform-origin: 2px 125px;
+  }
+  .second_line {
+    height: 150px;
+    width: 0px;
+    border: 1px solid black;
+    left: 149px;
+    transform-origin: 1px 150px;
+  }
+}
+
+.clock6{
+  position: relative;
+  width: 300px;
+  height: 300px;
+  .time_holder {
+    width: 50px;
+    height: 50px;
+    background-color: blue;
+    opacity: 0.2;
+    position: absolute;
+    border-radius: 50px;
+    left: 125px;
+  }
+  .rotating_clock {
+    width: 300px;
+    height: 300px;
+    border-radius: 300px;
+    background-color: rgba(250, 120, 0, 0.03);
+    position: relative;
+  }
+  .mark {
+    position: absolute;
+    width: 40px;
+    text-align: center;
+  }
+  .twelve, .zero_24 {
+    top: 5px;
+    left: 130px;
+  }
+  .one {
+    top: 22px;
+    left: 194px;
+    transform: rotate(30deg);
+  }
+  .two {
+    top: 69px;
+    right: 20px;
+    transform: rotate(60deg);
+  }
+  .three, .six_24 {
+    top: 132px;
+    right: 3px;
+    transform: rotate(90deg);
+  }
+  .four {
+    bottom: 69px;
+    right: 20px;
+    transform: rotate(120deg);
+
+  }
+  .five {
+    bottom: 21px;
+    left: 194px;
+    transform: rotate(150deg);
+  }
+  .six, .twelve_24 {
+    left: 130px;
+    bottom: 5px;
+    transform: rotate(180deg);
+  }
+  .seven {
+    left: 66px;
+    bottom: 21px;
+    transform: rotate(210deg);
+  }
+  .eight {
+    left: 20px;
+    bottom: 68px;
+    transform: rotate(240deg);
+  }
+  .nine, .eighteen_24 {
+    left: 3px;
+    bottom: 132px;
+    transform: rotate(270deg);
+  }
+  .ten {
+    left: 19px;
+    bottom: 196px;
+    transform: rotate(300deg);
+  }
+  .eleven {
+    left: 66px;
+    top: 23px;
+    transform: rotate(330deg);
+  }
+}
