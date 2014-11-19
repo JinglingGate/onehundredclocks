@@ -1,5 +1,5 @@
 class ClockController < ApplicationController
   def me
-    render "pages/clock#{rand(6)+1}"
+    render "pages/clock#{rand(7)+1}"
   end
 end

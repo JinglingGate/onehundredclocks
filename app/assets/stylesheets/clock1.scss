@@ -158,3 +158,34 @@ body {
     transform: rotate(330deg);
   }
 }
+.clock7{
+  background-image: image-url("kim.jpg");
+  width: 400px;
+  height: 600px;
+  position: relative;
+  color: white;
+  .hours_24_text {
+    position: absolute;
+    width: 50px;
+    left: 190px;
+    top: 192px;
+    text-align: center;
+    text-shadow: 2px 2px 3px black;
+  }
+  .minutes_text {
+    position: absolute;
+    width: 50px;
+    left: 207px;
+    top: 246px;
+    text-align: center;
+    text-shadow: 2px 2px 3px black;
+  }
+  .seconds_text {
+    position: absolute;
+    width: 50px;
+    left: 212px;
+    top: 300px;
+    text-align: center;
+    text-shadow: 2px 2px 3px black;
+  }
+}
